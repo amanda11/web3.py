@@ -273,6 +273,7 @@ def get_event_data(
         "address": log_entry["address"],
         "blockHash": log_entry["blockHash"],
         "blockNumber": log_entry["blockNumber"],
+        "removed": log_entry["removed"],
     }
 
     return cast(EventData, AttributeDict.recursive(event_data))
